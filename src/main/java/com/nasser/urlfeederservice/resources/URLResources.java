@@ -18,9 +18,4 @@ public class URLResources {
         System.out.println(url);
         return ResponseEntity.ok().build();
     }
-
-    @GetMapping("/pong")
-    public String pong(){
-        return "ping";
-    }
 }
