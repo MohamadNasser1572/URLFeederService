@@ -29,7 +29,6 @@ public class URLResources {
     @PostMapping
     public ResponseEntity<Void> submitURL(@RequestBody URL url) {
         url.setId(Constants.URL_UUID_PREFIX + UUID.randomUUID().toString());
-        url.setCreatedDate(new Timestamp(System.currentTimeMillis()));//setting the date
         urlService.save(url);//saving
         System.out.println(url);
         return ResponseEntity.ok().build();
