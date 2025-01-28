@@ -25,7 +25,7 @@ public class URL {
 
     String url;
 
-    @CreatedDate
+
     @Column(name = "created_date")
     Timestamp createdDate;
 }
