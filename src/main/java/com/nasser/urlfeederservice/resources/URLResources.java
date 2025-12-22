@@ -22,6 +22,8 @@ public class URLResources {
         return "pong";
     }
     //Create an endpoint that posts a String url that can return it on the compiler
+
+
     @PostMapping
     public ResponseEntity<Void> submitURL(@RequestBody URL url) {
         url.setId(Constants.URL_UUID_PREFIX + UUID.randomUUID().toString());
